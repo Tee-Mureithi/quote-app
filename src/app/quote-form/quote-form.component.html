@@ -6,7 +6,7 @@
         <div class="form-group">
   
             <label for="saying">Quote</label>
-            <textarea class="form-control" id="saying" rows="4" [(ngModel)]="newGoal.saying" name="saying" #saying="ngModel" required></textarea>
+            <textarea class="form-control" id="saying" rows="4" [(ngModel)]="newQuote.saying" name="saying" #saying="ngModel" required></textarea>
             <div [hidden]="saying.valid || saying.pristine" class="alert alert-danger">
               <p>Quote is required</p>
             </div>
@@ -14,17 +14,25 @@
 
         <div class="form-group">
   
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" [(ngModel)]="newGoal.name" name="name" #name='ngModel' required>
-            <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-              <p>Name is required</p>
+            <label for="author">Author's Name</label>
+            <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.saying" name="author" #author='ngModel' required>
+            <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+              <p>Name of author is required</p>
+            </div>
+        </div>
+        <div class="form-group">
+  
+            <label for="author">Author's Name</label>
+            <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.saying" name="author" #author='ngModel' required>
+            <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+              <p>Name of author is required</p>
             </div>
         </div>
         
         <div class="form-group">
   
             <label for="complete">Completion</label>
-            <input type='date' id="complete" [(ngModel)]="newGoal.completeDate" name="completeDate" #completeDate="ngModel" required>
+            <input type='date' id="complete" [(ngModel)]="newQuote.Date" name="completeDate" #completeDate="ngModel" required>
             <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
               <p>Date is required</p>
             </div>
