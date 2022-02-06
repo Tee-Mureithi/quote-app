@@ -22,21 +22,21 @@
         </div>
         <div class="form-group">
   
-            <label for="author">Author's Name</label>
-            <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.saying" name="author" #author='ngModel' required>
-            <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
-              <p>Name of author is required</p>
+            <label for="submitter">Submitter's Name</label>
+            <input type="text" class="form-control" id="submitter" [(ngModel)]="newQuote.saying" name="submitter" #submitter='ngModel' required>
+            <div [hidden]="submitter.valid || submitter.pristine" class="alert alert-danger">
+              <p>Name of submitter is required</p>
             </div>
         </div>
         
         <div class="form-group">
   
-            <label for="complete">Completion</label>
-            <input type='date' id="complete" [(ngModel)]="newQuote.Date" name="completeDate" #completeDate="ngModel" required>
-            <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
+            <label for="date">Completion</label>
+            <input type='date' id="date" [(ngModel)]="newQuote.date" name="date" #date="ngModel" required>
+            <div [hidden]="date.valid || date.pristine" class="alert alert-danger">
               <p>Date is required</p>
             </div>
         </div>
-        <button type="submit" class="btn btn-success">Add Goal</button>
+        <button type="submit" class="btn btn-success">Post Quote</button>
     </form>
   </div>
