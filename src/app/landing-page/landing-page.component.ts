@@ -8,7 +8,7 @@ import { QuotePhrase } from '../quote-phrase';
 })
 export class LandingPageComponent implements OnInit {
 
-  quotes? : QuotePhrase[] = [
+  quotes : QuotePhrase[] = [
     new QuotePhrase(1, 'If you want to live a happy life, tie it to a goal, not to people or things','Babe Ruth','Tee-Mureithi',80,4,new Date(2019,0,18)),
 
     new QuotePhrase(2,'Money and success don’t change people; they merely amplify what is already there.','Will Smith',
@@ -21,6 +21,14 @@ export class LandingPageComponent implements OnInit {
   // toggleDetails(index:number){
   //   this.quotes?[index].showDetails = !this.quotes?[index].showDetails;
   // }
+
+  liking(i:number){
+    this.quotes[i].upvote +=1;
+  }
+
+  disLiking(i:any){
+    this.quotes[i].downvote +=1;
+  }
 
   constructor() { }
 

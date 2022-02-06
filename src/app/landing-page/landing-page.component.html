@@ -9,14 +9,12 @@
      <div class="col-md-6" >
         <app-quote-form></app-quote-form>
      </div>
-     <div class="col-md-6"*ngFor= 'let quote of quotes' >
+     <div class="col-md-6"*ngFor= 'let quote of quotes; let i = index' >
         
                 {{quote.saying}}
-          <!-- <button (click)="toggleDetails(index)" class="btn-warning " >
-              Details
-          </button> -->
-          <button><i class="far fa-thumbs-up"></i></button>
-          <button><i class="far fa-thumbs-down"></i></button>
+        
+          <button (click)="liking(i)"><i class="far fa-thumbs-up"></i></button>
+          <button (click)="disLiking(i)"><i class="far fa-thumbs-down"></i></button>
     </div>
 
     </div>
