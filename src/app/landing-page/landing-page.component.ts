@@ -30,6 +30,15 @@ export class LandingPageComponent implements OnInit {
     this.quotes[i].downvote +=1;
   }
 
+  deleted(toDelete:boolean,i:number){
+    if (toDelete) {
+      let yesDelete=confirm("Do you want to delete the quote?")
+      if(yesDelete){
+        this.quotes.splice(i,1);
+    } 
+    }
+  }
+
   constructor() { }
 
   ngOnInit(): void {
