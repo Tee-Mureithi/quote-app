@@ -1,12 +1,12 @@
 <div class="container-fluid">
     <h2 class="text-center">Write down a Quote</h2>
     <hr>
-    <form #goalForm='ngForm'>
+    <form (ngSubmit)="postQuote()" #goalForm='ngForm'>
 
         <div class="form-group">
   
-            <label for="saying">Quote</label>
-            <textarea class="form-control" id="saying" rows="4" [(ngModel)]="newQuote.saying" name="saying" #saying="ngModel" required></textarea>
+            <label for="saying" id="quote">Quote</label>
+            <textarea class="form-control " id="saying" cols="20" rows="3" [(ngModel)]="newQuote.saying" name="saying" #saying="ngModel" required></textarea>
             <div [hidden]="saying.valid || saying.pristine" class="alert alert-danger">
               <p>Quote is required</p>
             </div>
@@ -14,7 +14,7 @@
 
         <div class="form-group">
   
-            <label for="author">Author's Name</label>
+            <label for="author" id="authors">Author's Name</label>
             <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author='ngModel' required>
             <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
               <p>Name of author is required</p>

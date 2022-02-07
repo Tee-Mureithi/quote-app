@@ -18,11 +18,7 @@ export class LandingPageComponent implements OnInit {
 
   ]
 
-  // toggleDetails(index:number){
-  //   this.quotes?[index].showDetails = !this.quotes?[index].showDetails;
-  // }
-
-  liking(i:number){
+ liking(i:number){
     this.quotes[i].upvote +=1;
   }
 
@@ -37,6 +33,15 @@ export class LandingPageComponent implements OnInit {
         this.quotes.splice(i,1);
     } 
     }
+
+
+  }
+
+  quoteSend(quote:QuotePhrase){
+    let quotesLength=this.quotes.length;
+    quote.id=quotesLength+1;
+    quote.date=new Date(quote.date)
+    this.quotes.push(quote)
   }
 
   constructor() { }
