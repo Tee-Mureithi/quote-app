@@ -3,7 +3,7 @@ Esther Wangari Mureithi<br>
 # Program name
     Quotes App<br>
 # Description of program
-This is a program that allows the customers of Moringa restaurant to see the menu of the restaurant and orfer meals.The program also displays the services offered by the restaurant and the prices of their different meals.By use of the program,one can also book a table<br>
+THis is an applivation that allows the user to create  quotes , like the quote , dislike a quote created by another user and also delete a quote.The application also allows the user to see then days elapsed since the quote was created.<br>
 # Technologies used
 (1.)HTML<br>
 (2.)CSS<br>
