@@ -7,6 +7,9 @@ THis is an applivation that allows the user to create  quotes , like the quote ,
 # Technologies used
 (1.)HTML<br>
 (2.)CSS<br>
+(3.)Angular <br>
+(4)Bootsrap
+
 # Program set-up instructions
 The users will need to install google chrome so as to view the program
 There are no other dependancies needed to run this code<br>
