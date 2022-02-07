@@ -1,0 +1,28 @@
+.revamp{
+    font-size: 30px;
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-evenly;
+    
+}
+
+#saying{
+    border: 2px solid black;
+
+}
+
+#author{
+    border: 2px solid black;
+}
+
+#submitter{
+    border: 2px solid black;
+}
+
+#date{
+    border: 2px solid black;
+}
+#success{
+    size: 100px;
+    
+}
