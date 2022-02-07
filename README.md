@@ -1,7 +1,7 @@
 # Author-name
 Esther Wangari Mureithi<br>
 # Program name
-Letuce Eat<br>
+    Quotes App<br>
 # Description of program
 This is a program that allows the customers of Moringa restaurant to see the menu of the restaurant and orfer meals.The program also displays the services offered by the restaurant and the prices of their different meals.By use of the program,one can also book a table<br>
 # Technologies used
